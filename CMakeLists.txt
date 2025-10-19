@@ -286,6 +286,7 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/examples
 install(CODE "message(STATUS \"Installing: <prefix>/${CMAKE_INSTALL_DOCDIR}/legacy/*\")")
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/legacy
    DESTINATION ${CMAKE_INSTALL_DOCDIR}
+   FILES_MATCHING PATTERN "?*.*"
    MESSAGE_NEVER
    COMPONENT Development
 )
